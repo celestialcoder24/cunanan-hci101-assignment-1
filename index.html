@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bea Nicole Cunanan - Portfolio </title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">B</div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services/Skills</a></li>
+                    <li><a href="#projects">My Works</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+            <button class="contact-btn">Contact Me</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1></h1>
+                <h2>Hi, I'm <span>Bea Nicole Cunanan</span><br>2ND Year BSIT Student</h2>
+                <p>This digital portfolio serves as a compilation of my activities, assignments, quizzes, and academic outputs. I created this website using HTML and CSS as part of my learning journey in web development.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">My Projects</button>
+                   
+                </div>
+                <div class="social-links">
+                    <a href="#"><span>📱</span></a>
+                    <a href="#"><span>📧</span></a>
+                    <a href="#"><span>🔗</span></a>
+                    <a href="#"><span>🎨</span></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="port-folio.png" alt="intro">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="profile-picture.jpg" alt="About Bea">
+                </div>
+                <div class="about-text">
+                    <h3> My Background </h3>
+                    <p>Welcome to my portfolio! Hi! I’m Bea Nicole Cunanan, a 2nd year BSIT student with a growing passion for technology and design. I’m 19 years old and currently living in Quezon City. I enjoy spending my free time watching series and movies, as well as playing games</p>
+                    <p>My skills include Web Development, prototyping, and UI/UX Designing, creative design, and programming. I'm not that really best of those skills but I know I'll improve.</p>
+                    <div class="skills">
+                        <span class="skill">Figma</span>
+                        <span class="skill">Canva</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">PHP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Services/Skills</h2>
+                <p>Bring ideas into intuitive digital experiences</p>
+            </div>
+            <div class="services-container">
+                <div class="services-carousel" id="services-carousel">
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>UI/UX Design</h3>
+                        <p>Creating intuitive and visually appealing designs that enhance user experience.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Web Design</h3>
+                        <p>Designing responsive and engaging websites tailored to user needs.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>App Design</h3>
+                        <p>Crafting seamless and user-friendly mobile app interfaces.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">✏️</div>
+                        <h3>Prototyping & Wireframing</h3>
+                        <p>Building interactive prototypes and structured wireframes for better design flow.</p>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" onclick="scrollCarousel('services-carousel', 'left')">&lt;</button>
+                    <button class="carousel-btn" onclick="scrollCarousel('services-carousel', 'right')">&gt;</button>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                    <span class="dot" onclick="goToSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Portfolio</h2>
+                <p>Here is my compiled papers activities, quizzes,assignments and more. </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class=""><img src="activity.jpeg" alt="Activities"> </div>
+                    <div class="project-content">
+                        <h3>Activities</h3>
+                        <p>Compiled papers of my Activities in HCI </p>
+                        <span class="project-tag">View</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                     <div class=""><img src="quiz.jpeg" alt="quiz"> </div>
+                    <div class="project-content">
+                        <h3>Quizzes</h3>
+                        <p>Compiled papers of my Quizzes in HCI.</p>
+                        <span class="project-tag">View</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                     <div class=""><img src="assign.jpeg" alt="ass"> </div>
+                    <div class="project-content">
+                        <h3>Assignments</h3>
+                        <p>DCompiled papers of my Assignments in HCI</p>
+                        <span class="project-tag">View</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Get in touch for collaborations or inquiries</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Let's Talk!</h2>
+                    <p>I'm currently available for freelance projects and full-time opportunities. Feel free to reach out if you have any questions or want to discuss potential collaborations.</p>
+                    <div class="contact-details">
+                        <p>📧 beacunanan01@gmail.com</p>
+                        <p>📱 +63 9386140855</p>
+                        <p>📍 75-I. Harmony St., Balingasa, Q.C.</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Bea Cunanan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Carousel functionality
+        function scrollCarousel(carouselId, direction) {
+            const carousel = document.getElementById(carouselId);
+            const scrollAmount = carousel.offsetWidth;
+            
+            if (direction === 'left') {
+                carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+
+        function goToSlide(index) {
+            const carousel = document.getElementById('services-carousel');
+            const cardWidth = carousel.children[0].offsetWidth + 20; // 20px gap
+            carousel.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
+            
+            // Update dots
+            document.querySelectorAll('.dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Update active class
+                document.querySelectorAll('nav a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+
+        // Sticky header effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(26, 0, 51, 0.95)';
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.3)';
+            } else {
+                header.style.background = 'rgba(26, 0, 51, 0.8)';
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
